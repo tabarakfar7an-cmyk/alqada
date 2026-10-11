@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مركز القادة لاستشارات التعليم وتطوير الأداء - الطرة</title>
+  <meta name="description" content="مركز القادة بالطرة: نبني شخصية القائد ولا نلقّن المناهج. تسجيل فوري للصفوف من الأول حتى العاشر، وأسبوع تشخيص أكاديمي ومهاراتي مجاني.">
+
+  <!-- Bootstrap 5 + أيقونات Font Awesome (نسخ محلية داخل المجلد، تعمل بدون إنترنت) -->
+  <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
+  <!-- خط Cairo / Tajawal (اختياري: يظهر عند توفر الإنترنت، وإلا يُستخدم خط النظام) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- شاشة التحميل -->
+  <div id="preloader"><div class="loader-ring"></div><span>مركز القادة</span></div>
+
+  <!-- شريط التنقل -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark">
+          <img src="assets/logo.jpg" alt="شعار مركز القادة" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <i class="fa-solid fa-graduation-cap" style="display:none"></i>
+        </span>
+        <span class="brand-text">مركز القادة<small>لاستشارات التعليم وتطوير الأداء</small></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offer">عرض الافتتاح</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">البرنامج</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">فريقنا</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">صور المركز</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">أسئلة شائعة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-gold">احجز موعدك <i class="fa-solid fa-arrow-left ms-1"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- الواجهة الرئيسية -->
+  <header id="home" class="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-glow"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 pt-5">
+        <div class="col-lg-7 text-center text-lg-start-rtl reveal">
+          <span class="hero-badge"><i class="fa-solid fa-star"></i> افتتاح مركز القادة في الطرة</span>
+          <h1 class="hero-title">نبني <span class="gold-text">شخصية القائد</span><br>ولا نلقّن المناهج</h1>
+          <p class="hero-sub">
+            مركز القادة لاستشارات التعليم وتطوير الأداء بالطرة. التسجيل الفوري مفتوح للطلاب من الصف الأول
+            وحتى العاشر في برنامج الحقيبة التعليمية الشاملة، بالتزامن مع منتصف الفصل الدراسي.
+          </p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+            <a href="#contact" class="btn btn-gold btn-lg">سجّل الآن</a>
+            <a href="#offer" class="btn btn-outline-light btn-lg">شاهد عرض الافتتاح</a>
+          </div>
+          <div class="hero-typed mt-4">نغطي لك: <span id="typed"></span><span class="cursor">|</span></div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center reveal">
+          <div class="hero-card">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="hero-emblem">
+              <img src="assets/logo.jpg" alt="شعار مركز القادة" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <i class="fa-solid fa-graduation-cap" style="display:none"></i>
+            </div>
+            <div class="float-chip chip-a"><i class="fa-solid fa-gift"></i> تشخيص مجاني</div>
+            <div class="float-chip chip-b"><i class="fa-solid fa-users"></i> مجموعات نخبة</div>
+            <div class="float-chip chip-c"><i class="fa-solid fa-graduation-cap"></i> الصف 1 - 10</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#stats" class="scroll-down" aria-label="انزل للأسفل"><i class="fa-solid fa-angles-down"></i></a>
+  </header>
+
+  <!-- أرقام سريعة -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3 reveal"><div class="stat"><i class="fa-solid fa-coins"></i><h3><span class="counter" data-target="25">0</span> د</h3><p>شهرياً للحزمة الكاملة</p></div></div>
+        <div class="col-6 col-lg-3 reveal"><div class="stat"><i class="fa-solid fa-book-bookmark"></i><h3><span class="counter" data-target="3">0</span></h3><p>مواد أساسية في حقيبة واحدة</p></div></div>
+        <div class="col-6 col-lg-3 reveal"><div class="stat"><i class="fa-solid fa-users"></i><h3>6 - <span class="counter" data-target="12">0</span></h3><p>طالباً في كل مجموعة</p></div></div>
+        <div class="col-6 col-lg-3 reveal"><div class="stat"><i class="fa-solid fa-gift"></i><h3><span class="counter" data-target="1">0</span> أسبوع</h3><p>تشخيص مجاني بالكامل</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- عرض الافتتاح -->
+  <section id="offer" class="section">
+    <div class="container">
+      <div class="offer-card reveal">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="offer-ribbon"><i class="fa-solid fa-cake-candles"></i> عرض الافتتاح</span>
+            <h2 class="offer-title">لماذا مركز القادة هو <span class="gold-text">الخيار الأضمن</span> لعائلتك؟</h2>
+            <p class="offer-text">
+              بمناسبة الافتتاح نقدّم <strong>أسبوع التشخيص الأكاديمي والمهاراتي مجاناً بالكامل</strong> للأسبوع الأول،
+              لنعرف مستوى ابنك ومهاراته بدقة قبل أن نبدأ الخطة.
+            </p>
+            <a href="#contact" class="btn btn-gold btn-lg">احجز موعد التشخيص المجاني</a>
+          </div>
+          <div class="col-lg-5">
+            <div class="price-box">
+              <small>الحزمة الذكية</small>
+              <div class="price"><span class="gold-text">25</span> <em>د / شهرياً</em></div>
+              <ul>
+                <li><i class="fa-solid fa-circle-check"></i> الرياضيات</li>
+                <li><i class="fa-solid fa-circle-check"></i> اللغة الإنجليزية</li>
+                <li><i class="fa-solid fa-circle-check"></i> اللغة العربية</li>
+              </ul>
+              <p>ثلاث مواد أساسية وحرجة معاً في حقيبة واحدة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <div class="about-visual">
+            <img class="about-photo p1" src="assets/photos/class-2.jpg" alt="طالبات يدرسن ضمن مجموعة صغيرة مع معلمة في المركز">
+            <img class="about-photo p2" src="assets/photos/class-4.jpg" alt="معلمة تتابع طالباً بشكل فردي">
+            <div class="about-years"><strong>جديد</strong><span>افتتاح المركز بالطرة</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <span class="section-tag">من نحن</span>
+          <h2 class="section-title">نبني <span class="gold-text">شخصية القائد</span> ولا نلقّن المناهج</h2>
+          <p class="lead-text">
+            مركز القادة لاستشارات التعليم وتطوير الأداء في الطرة. نعتمد على مجموعات صغيرة ومتابعة فردية دقيقة،
+            ونجمع بين التعليم والإرشاد التربوي وبناء الثقة بالنفس، ونرفع للأهل تقارير واضحة بالأرقام عن تحسّن ابنهم.
+          </p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i> برنامج الحقيبة التعليمية الشاملة للصفوف من الأول إلى العاشر</li>
+            <li><i class="fa-solid fa-circle-check"></i> مجموعات نخبة صغيرة ومغلقة تشبه الخصوصي المنزلي</li>
+            <li><i class="fa-solid fa-circle-check"></i> إشراف إرشادي وتربوي مع مرشدة المركز</li>
+            <li><i class="fa-solid fa-circle-check"></i> تقارير أداء شهرية تُسلّم للأهل</li>
+          </ul>
+          <div class="row g-3 mt-3">
+            <div class="col-sm-6"><div class="mini-card"><i class="fa-solid fa-book-open-reader"></i><div><h6>للطلاب</h6><p>التسجيل الفوري مفتوح من الصف الأول حتى العاشر.</p></div></div></div>
+            <div class="col-sm-6"><div class="mini-card"><i class="fa-solid fa-chalkboard-user"></i><div><h6>للمعلمين</h6><p>نستقبل طلبات انضمام المعلمين إلى فريق المركز.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- البرنامج -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">برنامج الحقيبة التعليمية الشاملة</span>
+        <h2 class="section-title">ما الذي <span class="gold-text">يميّز برنامجنا؟</span></h2>
+        <p class="text-muted mx-auto" style="max-width:620px">أربع ركائز تجعل المتابعة أدق والنتائج أوضح لكل طالب.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-piggy-bank"></i></div><h5>حزمة مادية ذكية ومنافسة</h5><p>ثلاث مواد أساسية وحرجة (الرياضيات، اللغة الإنجليزية، العربي) معاً في حقيبة واحدة بقيمة 25 د. شهرياً فقط.</p><a href="#contact">سجّل الآن <i class="fa-solid fa-arrow-left"></i></a></div></div>
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-heart-pulse"></i></div><h5>إشراف إرشادي وتربوي</h5><p>جلسات مخصصة مع مرشدة المركز لبناء الثقة بالنفس وتنظيم وقت الدراسة.</p><a href="#contact">سجّل الآن <i class="fa-solid fa-arrow-left"></i></a></div></div>
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-users"></i></div><h5>مجموعات نخبة صغيرة ومغلقة</h5><p>من 6 إلى 12 طالباً كحد أقصى في الصف، لضمان متابعة فردية دقيقة تشبه الخصوصي المنزلي.</p><a href="#contact">سجّل الآن <i class="fa-solid fa-arrow-left"></i></a></div></div>
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-chart-line"></i></div><h5>تقارير أداء دورية</h5><p>كشوفات شهرية تُسلّم للأهل لمتابعة نسب تحسّن مهارات الطفل بالأرقام والتوثيق.</p><a href="#contact">سجّل الآن <i class="fa-solid fa-arrow-left"></i></a></div></div>
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-notes-medical"></i></div><h5>تشخيص أكاديمي ومهاراتي</h5><p>أسبوع تشخيص مجاني بالكامل بمناسبة الافتتاح، نحدد فيه نقاط القوة والمهارات التي تحتاج دعماً.</p><a href="#contact">احجز موعدك <i class="fa-solid fa-arrow-left"></i></a></div></div>
+        <div class="col-md-6 col-lg-4 reveal"><div class="service-card"><div class="icon"><i class="fa-solid fa-bus"></i></div><h5>المواصلات</h5><p>خدمة المواصلات متوفرة باشتراك اختياري لمن يرغب بها.</p><a href="#contact">استفسر الآن <i class="fa-solid fa-arrow-left"></i></a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- فريق العمل -->
+  <section id="team" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">فريق العمل</span>
+        <h2 class="section-title">نخبة من <span class="gold-text">المعلمين والمختصين</span></h2>
+        <p class="text-muted mx-auto" style="max-width:620px">فريق يجمع المعلمين والأخصائيين لمرافقة الطالب أكاديمياً ونفسياً وسلوكياً.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>ا</span><i class="fa-solid fa-heart-pulse"></i></div><h5>الاء الخطيب</h5><strong>أخصائية الإرشاد</strong><p>إرشاد وبناء الثقة</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>م</span><i class="fa-solid fa-microphone"></i></div><h5>منار جنيدي</h5><strong>أخصائية النطق</strong><p>أخصائية نطق</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>ز</span><i class="fa-solid fa-book-open-reader"></i></div><h5>زهراء درابسة</h5><strong>معلمة الحقيبة</strong><p>من الصف الأول إلى الرابع</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>ب</span><i class="fa-solid fa-calculator"></i></div><h5>بيان</h5><strong>معلمة الرياضيات</strong><p>من الصف الرابع إلى الثامن</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>ف</span><i class="fa-solid fa-book"></i></div><h5>فاطمة قرباع</h5><strong>معلمة اللغة العربية</strong><p>من الصف السادس إلى الثامن</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>م</span><i class="fa-solid fa-book"></i></div><h5>محمد درابسة</h5><strong>أستاذ اللغة العربية</strong><p>الصفان التاسع والعاشر</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3 reveal"><div class="team-card"><div class="avatar"><span>ا</span><i class="fa-solid fa-language"></i></div><h5>اية الخطيب</h5><strong>معلمة اللغة الإنجليزية</strong><p>من الصف الثامن إلى العاشر</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- معرض الصور -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">من داخل المركز</span>
+        <h2 class="section-title">لحظات من <span class="gold-text">حصصنا</span></h2>
+      </div>
+      <div class="gallery reveal">
+        <a href="assets/photos/class-1.jpg" class="g-item g1" data-bs-toggle="modal" data-bs-target="#lightbox" data-src="assets/photos/class-1.jpg" data-alt="معلم يشرح لطالب داخل المركز"><img src="assets/photos/class-1.jpg" alt="معلم يشرح لطالب داخل المركز"><span><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>
+        <a href="assets/photos/class-2.jpg" class="g-item g2" data-bs-toggle="modal" data-bs-target="#lightbox" data-src="assets/photos/class-2.jpg" data-alt="مجموعة طالبات مع معلمتهن"><img src="assets/photos/class-2.jpg" alt="مجموعة طالبات مع معلمتهن"><span><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>
+        <a href="assets/photos/class-3.jpg" class="g-item g3" data-bs-toggle="modal" data-bs-target="#lightbox" data-src="assets/photos/class-3.jpg" data-alt="طالبات يحللن الواجبات في مجموعة صغيرة"><img src="assets/photos/class-3.jpg" alt="طالبات يحللن الواجبات في مجموعة صغيرة"><span><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>
+        <a href="assets/photos/class-4.jpg" class="g-item g4" data-bs-toggle="modal" data-bs-target="#lightbox" data-src="assets/photos/class-4.jpg" data-alt="جلسة متابعة فردية مع معلمة"><img src="assets/photos/class-4.jpg" alt="جلسة متابعة فردية مع معلمة"><span><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>
+        <a href="assets/photos/class-5.jpg" class="g-item g5" data-bs-toggle="modal" data-bs-target="#lightbox" data-src="assets/photos/class-5.jpg" data-alt="مجموعة طلاب مع معلمتهم"><img src="assets/photos/class-5.jpg" alt="مجموعة طلاب مع معلمتهم"><span><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- نافذة تكبير الصورة -->
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+        <img id="lightboxImg" src="" alt="" class="img-fluid rounded-4">
+      </div>
+    </div>
+  </div>
+
+  <!-- كيف نبدأ -->
+  <section id="process" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">كيف نبدأ</span>
+        <h2 class="section-title">أربع خطوات <span class="gold-text">بسيطة</span></h2>
+      </div>
+      <div class="row g-4 steps">
+        <div class="col-md-6 col-lg-3 reveal"><div class="step"><span class="num">1</span><h5>تواصل معنا</h5><p>عبر رسائل الصفحة أو واتساب على الرقم مباشرة.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal"><div class="step"><span class="num">2</span><h5>موعد التشخيص</h5><p>نحدد معك موعد التشخيص المجاني.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal"><div class="step"><span class="num">3</span><h5>الانضمام للمجموعة</h5><p>يبدأ ابنك ضمن مجموعة نخبة صغيرة بحسب صفه.</p></div></div>
+        <div class="col-md-6 col-lg-3 reveal"><div class="step"><span class="num">4</span><h5>تقرير شهري</h5><p>تصلكم كشوفات تُظهر تحسّن المهارات بالأرقام.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- انضمام المعلمين -->
+  <section id="teachers" class="section section-dark">
+    <div class="container text-center reveal">
+      <span class="section-tag light">فرصة للمعلمين</span>
+      <h2 class="section-title text-white">انضم إلى <span class="gold-text">فريق القادة</span></h2>
+      <p class="mx-auto mb-4" style="max-width:640px;color:rgba(255,255,255,.8);line-height:2">
+        نعلن عن بدء استقبال طلبات انضمام المعلمين. تواصل معنا وأرسل طلبك عبر رسائل الصفحة أو واتساب.
+      </p>
+      <a href="#" class="btn btn-gold btn-lg js-wa" data-msg="السلام عليكم، أرغب بتقديم طلب انضمام كمعلم/ة في مركز القادة"><i class="fa-brands fa-whatsapp me-2"></i> قدّم طلب الانضمام</a>
+    </div>
+  </section>
+
+  <!-- الأسئلة الشائعة -->
+  <section id="faq" class="section">
+    <div class="container" style="max-width:850px">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">أسئلة شائعة</span>
+        <h2 class="section-title">إجابات على <span class="gold-text">استفساراتك</span></h2>
+      </div>
+      <div class="accordion reveal" id="faqAcc">
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">هل التشخيص مجاني فعلاً؟</button></h2><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">نعم، بمناسبة الافتتاح نقدّم أسبوع التشخيص الأكاديمي والمهاراتي مجاناً بالكامل للأسبوع الأول.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">لأي صفوف يتوفر البرنامج؟</button></h2><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">التسجيل مفتوح للطلاب من الصف الأول وحتى الصف العاشر في برنامج الحقيبة التعليمية الشاملة.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">كم تكلفة الحزمة؟ وماذا تشمل؟</button></h2><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">25 د. شهرياً فقط، وتشمل ثلاث مواد أساسية وحرجة معاً في حقيبة واحدة: الرياضيات واللغة الإنجليزية واللغة العربية.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f4">كم عدد الطلاب في كل مجموعة؟</button></h2><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">من 6 إلى 12 طالباً كحد أقصى في الصف، لضمان متابعة فردية دقيقة تشبه الخصوصي المنزلي.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f5">هل المواصلات إلزامية؟</button></h2><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">لا، المواصلات اشتراك اختياري.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f6">كيف أحجز موعد التشخيص؟</button></h2><div id="f6" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">تواصلوا معنا عبر رسائل الصفحة، أو مباشرة عبر واتساب على الرقم 0789898201، أو عبر النموذج في أسفل الصفحة.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل معنا -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-tag">تواصل معنا</span>
+        <h2 class="section-title">للحجز وتحديد موعد <span class="gold-text">التشخيص المجاني</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal">
+          <div class="contact-info">
+            <h4>معلومات التواصل</h4>
+            <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><strong>المقر</strong><span>الطرة / الحي الجنوبي، 100 متر جنوب معرض الشياكة</span></div></div>
+            <div class="info-item"><i class="fa-solid fa-phone"></i><div><strong>الهاتف وواتساب</strong><a href="tel:+962789898201" class="phone-link" dir="ltr">0789898201</a></div></div>
+            <div class="info-item"><i class="fa-solid fa-comments"></i><div><strong>رسائل الصفحة</strong><span>يمكنكم مراسلتنا عبر رسائل صفحة المركز</span></div></div>
+            <div class="socials">
+              <a href="#" class="js-wa" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="tel:+962789898201" aria-label="اتصال"><i class="fa-solid fa-phone"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6"><label class="form-label">الاسم الكامل</label><input type="text" class="form-control" id="name" required><div class="invalid-feedback">الرجاء إدخال الاسم</div></div>
+              <div class="col-md-6"><label class="form-label">رقم الهاتف</label><input type="tel" class="form-control" id="phone" dir="ltr" required pattern="[0-9+\s]{8,15}"><div class="invalid-feedback">أدخل رقم هاتف صحيح</div></div>
+              <div class="col-12"><label class="form-label">نوع الطلب</label>
+                <select class="form-select" id="service" required>
+                  <option value="">اختر...</option>
+                  <option>حجز موعد التشخيص المجاني</option>
+                  <option>تسجيل طالب (الصف 1 - 10)</option>
+                  <option>الاستفسار عن المواصلات</option>
+                  <option>طلب انضمام معلم/ة</option>
+                  <option>استفسار آخر</option>
+                </select><div class="invalid-feedback">اختر نوع الطلب</div></div>
+              <div class="col-12"><label class="form-label">ملاحظات (مثل: صف الطالب)</label><textarea class="form-control" id="message" rows="4"></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-gold btn-lg w-100"><i class="fa-brands fa-whatsapp me-2"></i> إرسال عبر واتساب</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-4"><h5 class="mb-1">مركز القادة</h5><p class="mb-0">لاستشارات التعليم وتطوير الأداء بالطرة</p></div>
+        <div class="col-md-4 text-md-center"><a href="#home">الرئيسية</a><a href="#offer">عرض الافتتاح</a><a href="#contact">تواصل</a></div>
+        <div class="col-md-4 text-md-end">© <span id="year"></span> مركز القادة. جميع الحقوق محفوظة.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر واتساب وزر الصعود -->
+  <a href="#" id="waFloat" class="wa-float js-wa" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+  <button id="toTop" class="to-top" aria-label="للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
