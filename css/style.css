@@ -392,3 +392,32 @@ img { max-width: 100%; }
 .chip-c { top: 38%; left: 0; }
 .gallery > * { min-width: 0; min-height: 0; }
 .g-item img { display: block; }
+
+/* ===== Pricing ===== */
+.section-pricing { background: linear-gradient(180deg, #f6f0df, #fbf8ef); }
+.pricing-sub { text-align: center; position: relative; margin-bottom: 28px; font-weight: 800; color: var(--navy); font-size: 1.35rem; }
+.pricing-sub::before { content: ""; position: absolute; top: 50%; right: 0; left: 0; border-top: 2px dashed rgba(201,162,75,.5); }
+.pricing-sub span { position: relative; background: #f9f5e8; padding: 0 20px; }
+.price-card {
+  background: #fff; border-radius: 24px; padding: 34px 28px; text-align: center; height: 100%;
+  border: 1px solid rgba(201,162,75,.35); box-shadow: var(--shadow); transition: .35s; display: flex; flex-direction: column;
+}
+.price-card:hover { transform: translateY(-8px); box-shadow: 0 25px 55px rgba(15,36,71,.2); }
+.price-card .ptag { display: inline-block; background: rgba(201,162,75,.16); color: var(--gold-dark); font-weight: 800; padding: 6px 20px; border-radius: 50px; }
+.price-num { margin: 18px 0 8px; font: 800 4.6rem/1 'Cairo', 'Segoe UI', sans-serif; }
+.price-num em { display: block; font-style: normal; font-size: 1.05rem; font-weight: 700; color: var(--muted); margin-top: 6px; }
+.subject-list { list-style: none; padding: 0; margin: 20px auto 26px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; flex-grow: 1; align-content: center; }
+.subject-list li { background: var(--cream); border: 1px solid rgba(201,162,75,.3); border-radius: 50px; padding: 8px 18px; font-weight: 700; color: var(--navy); }
+.subject-list li i { color: var(--gold); margin-left: 6px; }
+.price-card.featured { background: linear-gradient(160deg, var(--navy), var(--navy-dark)); border-color: var(--gold); }
+.price-card.featured .ptag { background: rgba(201,162,75,.2); color: var(--gold-light); }
+.price-card.featured .price-num em { color: rgba(255,255,255,.75); }
+.price-card.featured .subject-list li { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
+.exam-card { background: #fff; border-radius: 20px; padding: 26px 20px; text-align: center; height: 100%; border: 1px solid rgba(201,162,75,.3); box-shadow: var(--shadow); transition: .35s; }
+.exam-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+.exam-icon { width: 62px; height: 62px; margin: 0 auto 14px; border-radius: 18px; display: grid; place-items: center; font-size: 1.6rem; color: var(--navy-dark); background: linear-gradient(135deg, var(--gold-dark), var(--gold-light)); }
+.exam-card h5 { font-weight: 800; color: var(--navy); font-size: 1.05rem; }
+.exam-price { color: var(--muted); font-weight: 700; }
+.exam-price strong { font: 800 2.6rem 'Cairo', 'Segoe UI', sans-serif; color: var(--navy); }
+@media (max-width: 575px) { .price-num { font-size: 3.8rem; } .pricing-sub { font-size: 1.1rem; } .pricing-sub span { padding: 0 10px; } }
+@media (min-width: 992px) and (max-width: 1199px) { .navbar .nav-link { padding: .5rem .4rem !important; font-size: .88rem; } .navbar .btn-gold { padding: .45rem .9rem; font-size: .9rem; } .brand-text small { display: none; } }
